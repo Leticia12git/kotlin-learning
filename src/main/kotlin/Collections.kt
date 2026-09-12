@@ -74,5 +74,33 @@ class Collections {
 
         val readOnlyJuiceMenu = mapOf("apple " to 100, "banana " to 190)
         println("The value of pinaple juice is: ${readOnlyJuiceMenu["pinaple"]}")
+
+
+        val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple", to 100, "kiwi" to 190, "orange" to 190)
+        juiceMenu["coconut"]
+        println(juiceMenu)
+
+        val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple" to 100, "kiwi" to 190)
+        juiceMenu.remove("orangeg")
+        println(juiceMenu)
+
+        val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+        println("This map has ${readOnlyJuiceMenu.count()} key-value-pairs")
+
+
+        val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+        println(readOnlyJuiceMenu.containsKey("kiwi"))
+
+
+        val readOnlyJuiceMenu = mapOf("apple " to 100, "kiwi" to 190, "orange" to 190)
+        println(readOnlyJuiceMenu)
+        println(readOnlyJuiceMenu.values)
+
+        val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 190)
+        println("orange" in readOnlyJuiceMenu.keys)
+
+        println("orange" in readOnlyJuiceMenu)
+
+        println(200 in readOnlyJuiceMenu)
     }
 }
